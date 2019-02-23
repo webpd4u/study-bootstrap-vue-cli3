@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 
 import Alert from "@/components/Alert";
+import Form from "@/components/Form";
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: "/alert",
       name: "alert",
       component: Alert
+    },
+    {
+      path: "/form",
+      name: "form",
+      component: Form
     }
   ]
 });
