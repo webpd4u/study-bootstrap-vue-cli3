@@ -4,6 +4,9 @@ import Home from "./views/Home.vue";
 
 import Alert from "@/components/Alert";
 import Form from "./views/Form";
+import Modal from "./views/Modal";
+import PopupForm from "./views/PopupForm";
+import DraggableDiv from "./views/DraggableDiv";
 
 Vue.use(Router);
 
@@ -34,6 +37,21 @@ export default new Router({
       path: "/form",
       name: "form",
       component: Form
+    },
+    {
+      path: "/modal",
+      name: "modal",
+      component: Modal
+    },
+    {
+      path: "/popup",
+      name: "popup",
+      component: PopupForm
+    },
+    {
+      path: "/draggable",
+      name: "draggable",
+      component: DraggableDiv
     }
   ]
 });
